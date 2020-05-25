@@ -1,7 +1,5 @@
 
-/* ==========================================================================
-   #FONT
-   ========================================================================== */
+/* FONT */
 .font-robo {
   font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
 }
@@ -10,9 +8,7 @@
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
 }
 
-/* ==========================================================================
-   #GRID
-   ========================================================================== */
+/* GRID */
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -44,13 +40,8 @@
   }
 }
 
-/* ==========================================================================
-   #BOX-SIZING
-   ========================================================================== */
-/**
- * More sensible default box-sizing:
- * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- */
+/* BOX-SIZING */
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -68,12 +59,8 @@ html {
   box-sizing: inherit;
 }
 
-/* ==========================================================================
-   #RESET
-   ========================================================================== */
-/**
- * A very simple reset that sits on top of Normalize.css.
- */
+/* RESET */
+
 body,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
@@ -85,29 +72,18 @@ fieldset, legend {
   padding: 0;
 }
 
-/**
- * Remove trailing margins from nested lists.
- */
 li > ol,
 li > ul {
   margin-bottom: 0;
 }
 
-/**
- * Remove default table spacing.
- */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/**
- * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
- *    on fieldsets.
- */
 fieldset {
   min-width: 0;
-  /* [1] */
   border: 0;
 }
 
@@ -117,9 +93,7 @@ button {
   border: none;
 }
 
-/* ==========================================================================
-   #PAGE WRAPPER
-   ========================================================================== */
+/* PAGE WRAPPER */
 .page-wrapper {
   min-height: 100vh;
 }
@@ -128,7 +102,6 @@ body {
   font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  /*overflow: hidden;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,9 +132,7 @@ h6 {
   font-size: 13px;
 }
 
-/* ==========================================================================
-   #BACKGROUND
-   ========================================================================== */
+/* BACKGROUND */
 .bg-blue {
   background: #2c6ed5;
 }
@@ -171,22 +142,24 @@ h6 {
 }
 
 .bg-gra-01 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#a8e7b3), to(#a18cd1));
-  background: -webkit-linear-gradient(bottom, #a8e7b3 0%, #a18cd1 100%);
-  background: -moz-linear-gradient(bottom, #a8e7b3 0%, #a18cd1 100%);
-  background: -o-linear-gradient(bottom, #a8e7b3 0%, #a18cd1 100%);
-  background: linear-gradient(to top, #a8e7b3 0%, #a18cd1 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
 }
 
-/* ==========================================================================
-   #SPACING
-   ========================================================================== */
+/* SPACING */
 .p-t-100 {
   padding-top: 100px;
 }
 
+.p-t-30 {
+  padding-top: 30px;
+}
+
 .p-t-180 {
-  padding-top: 80px;
+  padding-top: 180px;
 }
 
 .p-t-20 {
@@ -205,9 +178,11 @@ h6 {
   padding-bottom: 100px;
 }
 
-/* ==========================================================================
-   #WRAPPER
-   ========================================================================== */
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+/* WRAPPER */
 .wrapper {
   margin: 0 auto;
 }
@@ -224,9 +199,7 @@ h6 {
   max-width: 680px;
 }
 
-/* ==========================================================================
-   #BUTTON
-   ========================================================================== */
+/* BUTTON */
 .btn {
   display: inline-block;
   line-height: 40px;
@@ -261,9 +234,7 @@ h6 {
   background: #4dae3c;
 }
 
-/* ==========================================================================
-   #DATE PICKER
-   ========================================================================== */
+/* DATE PICKER */
 td.active {
   background-color: #2c6ed5;
 }
@@ -311,9 +282,7 @@ input[type="date" i] {
   outline: none;
 }
 
-/* ==========================================================================
-   #FORM
-   ========================================================================== */
+/* FORM */
 input {
   outline: none;
   margin: 0;
@@ -354,35 +323,28 @@ input {
 }
 
 .input--style-3::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #ccc;
 }
 
 .input--style-3:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #ccc;
   opacity: 1;
 }
 
 .input--style-3::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #ccc;
   opacity: 1;
 }
 
 .input--style-3:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #ccc;
 }
 
 .input--style-3:-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #ccc;
 }
 
-/* ==========================================================================
-   #SELECT2
-   ========================================================================== */
+/* SELECT2 */
 .select--no-search .select2-search {
   display: none !important;
 }
@@ -463,9 +425,7 @@ input {
   overflow: hidden;
 }
 
-/* ==========================================================================
-   #TITLE
-   ========================================================================== */
+/* TITLE */
 .title {
   font-size: 24px;
   color: #fff;
@@ -473,9 +433,7 @@ input {
   margin-bottom: 36px;
 }
 
-/* ==========================================================================
-   #CARD
-   ========================================================================== */
+/* CARD */
 .card {
   overflow: hidden;
   -webkit-border-radius: 3px;
@@ -525,3 +483,5 @@ input {
     padding-bottom: 45px;
   }
 }
+
+/* By Naffy Dharni */
